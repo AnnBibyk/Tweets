@@ -42,8 +42,18 @@ class TwitterTableViewController: UITableViewController, APITwitterDelegate, UIT
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell") as! TweetsTableViewCell
-            cell.tweet = (tweetArr[indexPath.row - 1].name, tweetArr[indexPath.row - 1].date, tweetArr[indexPath.row - 1].text)
+            cell.loginLabel.text = tweetArr[indexPath.row].name
             
+            let date = tweetArr[indexPath.row].date
+            print(date)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "E MMM d HH:mm:ss Z yyyy"
+            let date2 = dateFormatter.date(from: date)
+            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+            
+            cell.dateLabel.text = dateFormatter.string(from: date2!)
+            
+            cell.tweetLabel.text = tweetArr[indexPath.row].text
             cell.loginLabel?.numberOfLines = 0
             cell.dateLabel?.numberOfLines = 0
             cell.tweetLabel?.numberOfLines = 0
