@@ -14,6 +14,8 @@ cd Tweets
 xed .
 ```
 
+For running the simulator press Cmd + R
+
 ## Demo
 
 <img src="https://media.giphy.com/media/PhGtWFYu4zSaxsbqTs/giphy.gif" width="300">
