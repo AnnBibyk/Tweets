@@ -16,4 +16,4 @@ xed .
 
 ## Demo
 
-<img src="https://media.giphy.com/media/PhGtWFYu4zSaxsbqTs/source.gif" width="300">
+<img src="https://media.giphy.com/media/PhGtWFYu4zSaxsbqTs/giphy-downsized-large.gif" width="300">
